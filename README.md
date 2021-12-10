@@ -6,7 +6,7 @@ Einfaches C++ Repo mit Makefile
 
 - Per VsCode Task:
   - Gewünschte `*.cpp` Datei in VsCode öffnen und aktiv auswählen
-  - Mit `CMD + SHIFT + B` wird die aktive Datei Kompiliert und anschließend ausgeführt
+  - Mit `Strg + SHIFT + B` wird die aktive Datei Kompiliert und anschließend ausgeführt
   - Wenn keine Ausgabe zu erkennen ist über die Menü Leiste `Terminal` --> `Neues Terminal` ein neues Terminal Fenster öffnen und das Fenster mit den Kompiliervorang wählen.
 - Per make im Terminal:
   - Terminal wie oben beschrieben öffnen

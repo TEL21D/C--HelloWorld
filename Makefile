@@ -1,17 +1,17 @@
 SOURCES = $(wildcard *.cpp)
-BINARIES := $(patsubst %.cpp, %.out, $(SOURCES))
+BINARIES := $(patsubst %.cpp, %.exe, $(SOURCES))
 
 .PHONY: $(SOURCES)
 
 all: $(BINARIES)
 
 % : %.cpp
-	g++ -std=c++17 -o $@.out $^
-	./$@.out
+	g++ -std=c++17 -o $@.exe $^
+	./$@.exe
 
-%.out : %.cpp
+%.exe : %.cpp
 	g++ -std=c++17 -o $@ $<
 	./$@
 
 clean:
-	rm -r *.out
+	del /q *.exe
